@@ -49,3 +49,30 @@ kubectl get pods --namespace `namespace`
 
 # create pod with namespace
 kubectl create -f `file/pod.yaml` --namespace `namespace`
+
+# delete namespace
+kubectl delete namespace `namespace`
+
+# delete pod
+kubectl delete pod `pod-name`
+
+kubectl delete pod `pod-name1,pod-name2`
+
+# delete pod by label
+kubectl delete pod -l '`key`=`value`'
+
+# delete all pod
+kubectl delete pod --all
+
+# delete all pod on with namespace
+kubectl delete pod --all --namespace `namespace`
+
+# show replication controller
+kubectl get replicationcontrollers
+
+# delete replication controller with all pods inside of it
+kubectl delete replicationcontrollers `nama-replication-controller` --cascade=true
+
+# delete replication controller only
+kubectl delete replicationcontrollers `nama-replication-controller` --cascade=false
+-> https://youtu.be/Ma2yqkRYlow?si=Vfwwr9KEt2Y0_stc
