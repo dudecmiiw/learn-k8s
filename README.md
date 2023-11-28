@@ -75,4 +75,15 @@ kubectl delete replicationcontrollers `nama-replication-controller` --cascade=tr
 
 # delete replication controller only
 kubectl delete replicationcontrollers `nama-replication-controller` --cascade=false
--> https://youtu.be/Ma2yqkRYlow?si=Vfwwr9KEt2Y0_stc
+
+# show replica set
+kubectl get replicaset
+
+# delete replica set with all pods inside of it
+!kubectl delete replicaset nginx-replica-set --cascade=true
+
+# delete replica set only
+!kubectl delete replicaset nginx-replica-set --cascade=false
+
+# Continue
+https://www.youtube.com/watch?v=hLWYSicY-wc&list=PL-CtdCApEFH8XrWyQAyRd6d_CKwxD8Ime&index=20
