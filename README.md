@@ -103,5 +103,47 @@ kubectl describe jobs `nama-jobs`
 # delete jobs
 kubectl delete jobs `nama-jobs`
 
+# show all cron jobs
+kubectl get cronjobs
+
+# delete cron jobs
+kubectl delete cronjobs `nama-cron-jobs`
+
+# show log on pod
+kubectl logs `nama-pod`
+
+# add label to node
+kubectl label node `nama-node` `key`=`value`
+
+# show all resources
+kubectl get all
+
+# show all resources on spesific namespace
+kubectl get all --namespace `nama-namespace`
+
+# delete all resources
+kubectl delete all
+
+# delete all resources on spesific namespace
+kubectl delete all --namespace `nama-namespace`
+
+# show services
+kubectl get services
+
+# delete services
+kubectl delete services `nama-service`
+
+# access shell on pods
+kubectl exec `nama-pod` -it -- /bin/bash
+
+# get env on pod
+kubectl exec `nama-pod` -it -- env
+
+# access service through DNS 
+`nama-service.nama-namespace.svc.cluster.local`
+
+# show all endpoints
+kubectl get endpoints
+
 # Continue
-https://www.youtube.com/watch?v=whgHflcc2KM&list=PL-CtdCApEFH8XrWyQAyRd6d_CKwxD8Ime&index=22
+https://www.youtube.com/watch?v=IOX2stxBw7k&list=PL-CtdCApEFH8XrWyQAyRd6d_CKwxD8Ime&index=28
